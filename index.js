@@ -26,8 +26,6 @@ app.get('/products', async (req, res) => {
 app.post('/products', async (req, res) => {
     const {title, description, price, quantity, available, category} = req.body;
 
-    const products = await prisma.product.findMany();
-
     const newProduct = await prisma.product.create({
         // data: {
         //     title: req.body.title,
@@ -46,6 +44,8 @@ app.post('/products', async (req, res) => {
             category: category
         }
     });
+
+    const products = await prisma.product.findMany();
 
     console.log("New Product: ", newProduct);
     console.log("Products: ", products);
