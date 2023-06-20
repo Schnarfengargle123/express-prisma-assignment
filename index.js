@@ -26,6 +26,11 @@ app.get('/products', async (req, res) => {
 app.post('/products', async (req, res) => {
     const {title, description, price, quantity, available, category} = req.body;
 
+    // const products = await prisma.product.findMany();
+
+    // let toBeCreatedProduct = newProduct;
+    // console.log("To Be Created Product: ", toBeCreatedProduct);
+
     const newProduct = await prisma.product.create({
         // data: {
         //     title: req.body.title,
@@ -35,13 +40,22 @@ app.post('/products', async (req, res) => {
         //     available: req.body.available
         // }
 
+        // data: {
+        //     title: title,
+        //     description: description,
+        //     price: price,
+        //     quantity: quantity,
+        //     available: available,
+        //     category: category
+        // }
+
         data: {
-            title: title,
-            description: description,
-            price: price,
-            quantity: quantity,
-            available: available,
-            category: category
+            title,
+            description,
+            price,
+            quantity,
+            available,
+            category
         }
     });
 
@@ -52,6 +66,6 @@ app.post('/products', async (req, res) => {
     res.send({newProduct, products});
 })
 
-app.listen(8000, () => {
+app.listen(port, () => {
     console.log(`Visit server @ localhost:${port}`);
 })

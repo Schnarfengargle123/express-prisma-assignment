@@ -16,6 +16,7 @@ model User {
   username String
   password String
   registered Boolean
+  reviews  Review[]
 }
 
 model Product {
@@ -26,4 +27,12 @@ model Product {
     price Float
     quantity Int
     available Boolean
+}
+
+model Review {
+  id Int @id @default(autoincrement())
+  title String
+  content String
+  author User @relation(fields: [authorId], references: [id]) 
+  authorId Int
 }
