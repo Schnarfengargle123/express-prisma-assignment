@@ -1,12 +1,10 @@
 # Week 3 – Practical Exercise
 ### Express Server & Prisma ORM
 
-##### Task Details
+#### Task Details
 &nbsp;
 
-
-
-###### Project Setup
+###### *Project Setup*
 
 * Initialise a `node` project via `npm init -y`.
 * Install the following dependencies:
@@ -40,7 +38,7 @@
 &nbsp;
 ___
 
-###### API Endpoints
+###### *API Endpoints*
 
 * Import `express` and create an instance of a server.
     * Create a root __endpoint__ to handle the server being started. Return __HTML__ instead of raw text.
@@ -51,30 +49,33 @@ ___
     * *__Use appropriate middleware to parse JSON data from both requests, and responses.__*
 * Create an __endpoint__ which returns a list of products from the *database* via __prisma__.
 * Create an __endpoint__ allowing the user to create a new product, returning both the newly created product, **and** a *response* containing the **updated** products data from the *database* via __prisma__.
-* ___
+  
+&nbsp;
 
 ## Documentation
 
+&nbsp;
 ### Prisma ORM
 
-[Prisma ORM • CLI Reference](https://www.prisma.io/docs/reference/api-reference/command-reference)
+##### [Prisma ORM • CLI Reference](https://www.prisma.io/docs/reference/api-reference/command-reference)
 
-[Prisma ORM • SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)
+##### [Prisma ORM • SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)
 
-[Prisma ORM • Schema Reference](https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference)
+##### [Prisma ORM • Schema Reference](https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference)
 
-[Prisma ORM • Client API Reference](https://www.prisma.io/docs/reference/api-reference/command-reference)
+##### [Prisma ORM • Client API Reference](https://www.prisma.io/docs/reference/api-reference/command-reference)
 
-[Prisma ORM • Prisma Migrate](https://www.prisma.io/docs/concepts/components/prisma-migrate/get-started)
+##### [Prisma ORM • Prisma Migrate](https://www.prisma.io/docs/concepts/components/prisma-migrate/get-started)
 
-[Prisma ORM • Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client)
+##### [Prisma ORM • Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client)
 
-[Prisma ORM • CRUD](https://www.prisma.io/docs/concepts/components/prisma-client/crud)
+##### [Prisma ORM • CRUD](https://www.prisma.io/docs/concepts/components/prisma-client/crud)
 
+&nbsp;
 ### Express
 
-[Express • Starter Template](https://expressjs.com/en/starter/hello-world.html)
+##### [Express • Starter Template](https://expressjs.com/en/starter/hello-world.html)
 
-[Express • Routing Syntax](https://expressjs.com/en/guide/routing.html)
+##### [Express • Routing Syntax](https://expressjs.com/en/guide/routing.html)
 
-[Express • API Reference](https://expressjs.com/en/4x/api.html)
+##### [Express • API Reference](https://expressjs.com/en/4x/api.html)
